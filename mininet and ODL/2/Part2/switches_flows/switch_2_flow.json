@@ -1,0 +1,62 @@
+{
+    "flow-node-inventory:flow": [
+        {
+            "idle-timeout": 30, 
+            "priority": 500, 
+            "table_id": 0, 
+            "id": 3, 
+            "match": {
+                "in-port": 1
+            }, 
+            "instructions": {
+                "instruction": [
+                    {
+                        "order": 0, 
+                        "apply-actions": {
+                            "action": [
+                                {
+                                    "output-action": {
+                                        "max-length": 65535, 
+                                        "output-node-connector": 2
+                                    }, 
+                                    "order": 0
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
+{
+    "flow-node-inventory:flow": [
+        {
+            "idle-timeout": 30, 
+            "priority": 500, 
+            "table_id": 0, 
+            "id": 4, 
+            "match": {
+                "in-port": 2
+            }, 
+            "instructions": {
+                "instruction": [
+                    {
+                        "order": 0, 
+                        "apply-actions": {
+                            "action": [
+                                {
+                                    "output-action": {
+                                        "max-length": 65535, 
+                                        "output-node-connector": 1
+                                    }, 
+                                    "order": 0
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

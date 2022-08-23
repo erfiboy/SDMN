@@ -1,0 +1,148 @@
+{
+    "flow-node-inventory:flow": [
+        {
+            "idle-timeout": 30, 
+            "priority": 500, 
+            "table_id": 0, 
+            "id": 0, 
+            "match": {
+                "ipv4-destination": "10.0.1.1/32", 
+                "in-port": 2, 
+                "ethernet-match": {
+                    "ethernet-type": {
+                        "type": 2048
+                    }
+                }
+            }, 
+            "instructions": {
+                "instruction": [
+                    {
+                        "order": 0, 
+                        "apply-actions": {
+                            "action": [
+                                {
+                                    "output-action": {
+                                        "max-length": 65535, 
+                                        "output-node-connector": 1
+                                    }, 
+                                    "order": 0
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
+{
+    "flow-node-inventory:flow": [
+        {
+            "idle-timeout": 30, 
+            "priority": 500, 
+            "table_id": 0, 
+            "id": 1, 
+            "match": {
+                "ipv4-destination": "10.0.2.1/32", 
+                "in-port": 1, 
+                "ethernet-match": {
+                    "ethernet-type": {
+                        "type": 2048
+                    }
+                }
+            }, 
+            "instructions": {
+                "instruction": [
+                    {
+                        "order": 0, 
+                        "apply-actions": {
+                            "action": [
+                                {
+                                    "output-action": {
+                                        "max-length": 65535, 
+                                        "output-node-connector": 2
+                                    }, 
+                                    "order": 0
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
+{
+    "flow-node-inventory:flow": [
+        {
+            "idle-timeout": 30, 
+            "priority": 500, 
+            "table_id": 0, 
+            "id": 2, 
+            "match": {
+                "in-port": 2, 
+                "arp-target-transport-address": "10.0.1.1/32", 
+                "ethernet-match": {
+                    "ethernet-type": {
+                        "type": 2054
+                    }
+                }
+            }, 
+            "instructions": {
+                "instruction": [
+                    {
+                        "order": 0, 
+                        "apply-actions": {
+                            "action": [
+                                {
+                                    "output-action": {
+                                        "max-length": 65535, 
+                                        "output-node-connector": 1
+                                    }, 
+                                    "order": 0
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
+{
+    "flow-node-inventory:flow": [
+        {
+            "idle-timeout": 30, 
+            "priority": 500, 
+            "table_id": 0, 
+            "id": 3, 
+            "match": {
+                "in-port": 1, 
+                "arp-target-transport-address": "10.0.2.1/32", 
+                "ethernet-match": {
+                    "ethernet-type": {
+                        "type": 2054
+                    }
+                }
+            }, 
+            "instructions": {
+                "instruction": [
+                    {
+                        "order": 0, 
+                        "apply-actions": {
+                            "action": [
+                                {
+                                    "output-action": {
+                                        "max-length": 65535, 
+                                        "output-node-connector": 2
+                                    }, 
+                                    "order": 0
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
