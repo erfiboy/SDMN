@@ -12,3 +12,6 @@ There is a readme in each of the folders describing the problems and results and
 
 # Docker
 In this homework we implement a [simple docker](./Docker/Q2/), a [dockers http server](./Docker/Q3) and also we learn about [network namespaces](./Docker/Q1).
+
+# LTE 
+Working with predictions in Atoll, Automatic Frequency Planning, Automatic Cell Planning based on tehran city database.
