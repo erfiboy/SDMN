@@ -2,8 +2,6 @@
 
 ## LTE Implementation in Atoll
 
-## Due date: 5 Mordad 1401
-
 ## ______________________________________________________
 
 ## Part 1 : LTE Scenario (10 Points)
